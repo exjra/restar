@@ -1,4 +1,4 @@
-QT += qml quick
+QT += qml quick widgets gui
 
 CONFIG += c++11
 
@@ -29,4 +29,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 include(opencv2.pri)
-include($$PWD\libdecodeqr\libdecodeqr.pri)
+include(../qzxing/src/QZXing.pri)
